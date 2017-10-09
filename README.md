@@ -11,17 +11,15 @@ var schema = require('contracts-json-schema')
 var assert = require('assert')
 
 assert(
-  ajv.validate(schema, {
-    who: [
-      {
-        name: 'Kyle E. Mitchell',
-        email: 'kyle@kemitchell.com',
-        where: 'California, USA'
+  ajv.validate(schema, [
+    {
+      name: 'Kyle E. Mitchell',
+      email: 'kyle@kemitchell.com',
+      where: 'California, USA',
+      services: {
+        support: 'https://github.com/kemitchell/switchmode/releases/tag/1e1c'
       }
-    ],
-    what: {
-      support: 'https://commonform.org/publications/switchmode/project-summary-open-support/1e1c'
     }
-  })
+  ])
 )
 ```
