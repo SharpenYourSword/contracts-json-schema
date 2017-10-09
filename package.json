@@ -1,6 +1,6 @@
 {
   "name": "contracts-json-schema",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "schema for CONTRACTS.json files",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
   "repository": "kemitchell/contracts-json-schema",
