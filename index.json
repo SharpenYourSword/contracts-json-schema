@@ -49,7 +49,7 @@
         "training": {
           "$ref": "#/definitions/terms"
         },
-        "bounties": {
+        "bounty": {
           "$ref": "#/definitions/terms"
         },
         "maintenance": {
