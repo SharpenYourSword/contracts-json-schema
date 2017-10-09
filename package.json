@@ -6,9 +6,13 @@
   "repository": "kemitchell/contracts-json-schema",
   "license": "0BSD",
   "devDependencies": {
-    "ajv": "^5.2.3"
+    "ajv": "^5.2.3",
+    "defence-cli": "^2.0.1",
+    "replace-require-self": "^1.1.1"
   },
   "scripts": {
-    "test": "node test.js"
+    "test": "npm run test:readme && npm run test:suite",
+    "test:readme": "defence -i javascript README.md | replace-require-self | node",
+    "test:suite": "node test.js"
   }
 }
